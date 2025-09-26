@@ -4,18 +4,18 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components & Pages
 import TopNavbar from "./pages/TopNavbar.jsx";
-import HomePage from "./pages/HomePage";
-import Footer from "./pages/Footer";
-import Login from "./pages/Login";
-import Signup from "./pages/Signup";
+import HomePage from "./pages/HomePage.jsx";
+import Footer from "./pages/Footer.jsx";
+import Login from "./pages/Login.jsx";
+import Signup from "./pages/Signup.jsx";
 import ChatBot from "./components/ChatBot.jsx";
-import Gallery from "./pages/Gallery";
-import AlumniDirectory from "./pages/AlumniDirectory";
-import StudentDirectory from "./pages/StudentDirectory";
-import StoriesAchievements from "./pages/StoriesAchievements";
+import Gallery from "./pages/Gallery.jsx";
+import AlumniDirectory from "./pages/AlumniDirectory.jsx";
+import StudentDirectory from "./pages/StudentDirectory.jsx";
+import StoriesAchievements from "./pages/StoriesAchievements.jsx";
 import StudentProfile from "./components/StudentProfile.jsx";
 import Profile from "./pages/ProfilePage.jsx";
-import AlmaCard from './components/AlmaCard';
+import AlmaCard from './components/AlmaCard.jsx';
 import MentorshipPage from "./pages/MentorshipPage.jsx";
 import InternshipsPage from "./pages/InternshipsPage.jsx";
 import Event from "./pages/AluminiEvent.jsx";
