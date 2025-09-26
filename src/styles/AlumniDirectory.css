@@ -1,0 +1,163 @@
+/* src/styles/AlumniDirectory.css */
+
+.search-input {
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+/* New Alumni Card Styles */
+.alumni-card-new {
+  background-color: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.alumni-card-new:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+}
+
+.card-header-new {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.profile-info {
+  flex-grow: 1;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.profile-title,
+.profile-company {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 2px 0;
+}
+
+.match-badge {
+  background-color: #e7f0ff;
+  color: #0052cc;
+  font-weight: 600;
+  font-size: 0.8rem;
+  padding: 5px 10px;
+  border-radius: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-body-new {
+  flex-grow: 1; /* Allows this section to fill available space */
+}
+
+.detail-item {
+  display: flex;
+  align-items: center;
+  color: #444;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.detail-item i {
+  color: #888;
+  margin-right: 10px;
+  font-size: 1.1rem;
+}
+
+.skills-section,
+.achievement-section {
+  margin-top: 20px;
+}
+
+.skills-section h6,
+.achievement-section h6 {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tag {
+  background-color: #f0f0f0;
+  color: #555;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+}
+
+.more-tag {
+  background-color: #e0e0e0;
+  font-weight: 500;
+}
+
+.achievement-section p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.card-footer-new {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 15px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-links a {
+  color: #888;
+  font-size: 1.3rem;
+  margin-right: 15px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #007bff;
+}
+
+.connect-button {
+  background-color: #fff;
+  color: #007bff;
+  border: 1px solid #007bff;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.connect-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}

@@ -1,0 +1,235 @@
+/* ---------------- General Navbar ---------------- */
+.navbar {
+  padding: 0.8rem 1rem;
+  font-family: 'Inter', sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  background-color: #fff !important;
+  z-index: 1050;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #0d6efd !important;
+}
+
+/* ---------------- Center Nav Links ---------------- */
+.navbar .nav-link {
+  font-weight: 500;
+  margin: 0 8px;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #0d6efd;
+}
+
+/* ---------------- Mega Dropdown ---------------- */
+.mega-dropdown {
+  position: relative;
+}
+
+.mega-dropdown .dropdown-menu {
+  width: 100%;
+  max-width: 600px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  background-color: #fff;
+  padding: 1rem;
+  display: none;
+  position: absolute;
+  top: 100%;
+  z-index: 1050;
+}
+
+.mega-dropdown:hover .dropdown-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mega-menu-column {
+  min-width: 140px;
+  margin-right: 20px;
+}
+
+.mega-menu-column h6 {
+  font-size: 0.85rem;
+  color: #0d6efd;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.mega-menu-column .dropdown-item {
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  color: #333;
+}
+
+.mega-menu-column .dropdown-item:hover {
+  background-color: #e8f4ff;
+  color: #0d6efd;
+}
+
+/* ---------------- Messages / Notifications ---------------- */
+.nav-icon {
+  position: relative;
+  margin-right: 10px;
+}
+
+.nav-icon i {
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.nav-icon i:hover {
+  transform: scale(1.2);
+  color: #0d6efd;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.65rem;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.notification-badge.bg-success {
+  background-color: #198754;
+}
+
+/* ---------------- Profile Avatar ---------------- */
+.profile-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f0f0f0;
+  transition: transform 0.2s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.1);
+}
+
+.profile-toggle {
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------------- Dropdown menus ---------------- */
+.dropdown-menu {
+  min-width: 220px;
+  padding: 0.5rem 0;
+}
+
+.message-item, .notification-item {
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.message-item {
+  background-color: #e7f1ff;
+  border-left: 4px solid #0d6efd;
+}
+
+.notification-item {
+  background-color: #fff4e1;
+  border-left: 4px solid #ffc107;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn-primary {
+  background: linear-gradient(45deg, #0d6efd, #0056b3);
+  border: none;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.btn-outline-primary {
+  border: 2px solid #0d6efd;
+  color: #0d6efd;
+  background: transparent;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* ---------------- Responsive adjustments ---------------- */
+@media (max-width: 991px) {
+  .mega-dropdown .dropdown-menu {
+    position: static !important;
+    transform: none;
+    width: 100%;
+    display: block;
+    margin-top: 0.5rem;
+  }
+
+  .mega-menu-column {
+    min-width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .navbar-collapse {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  }
+
+  .nav-link, .dropdown-item {
+    padding: 0.5rem 1rem;
+  }
+
+  .profile-toggle + .dropdown-menu {
+    left: 0 !important;
+    right: auto;
+  }
+
+  .nav-icon {
+    margin-right: 5px;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar .nav-link {
+    margin: 0 4px;
+    font-size: 0.9rem;
+  }
+  .profile-avatar {
+    width: 35px;
+    height: 35px;
+  }
+  .nav-icon i {
+    font-size: 1rem;
+  }
+}

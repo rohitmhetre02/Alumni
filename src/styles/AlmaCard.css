@@ -1,0 +1,160 @@
+/* Overlay for popup */
+.alma-card-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    padding: 20px;
+}
+
+/* Popup card with original design */
+.alma-card-popup {
+    position: relative;
+    width: 380px;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: slideIn 0.3s ease-out;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    color: #0077b5;
+}
+
+/* Slide-in animation */
+@keyframes slideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+/* Original card bars */
+.card-top-bar,
+.card-bottom-bar {
+    background-color: #0077b5;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.card-bottom-bar {
+    height: 40px;
+}
+
+.logo-main {
+    height: 30px;
+}
+
+.logo-secondary {
+    height: 35px;
+}
+
+.card-main-content {
+    padding: 25px;
+}
+
+.user-info-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.user-photo-container {
+    padding: 5px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.user-photo {
+    width: 90px;
+    height: 90px;
+    border-radius: 8px;
+    display: block;
+}
+
+.user-details h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #333;
+    margin: 0 0 5px;
+    display: flex;
+    align-items: center;
+}
+
+.verified-icon {
+    font-size: 1.1rem;
+    color: #0077b5;
+    margin-left: 8px;
+}
+
+.class-year {
+    background-color: #e9ecef;
+    color: #555;
+    font-size: 0.8rem;
+    font-weight: 500;
+    padding: 4px 10px;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.user-details p {
+    margin: 2px 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+.card-bottom-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.qr-code-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.alumni-id-container {
+    text-align: right;
+}
+
+.alumni-id-container span {
+    font-size: 0.9rem;
+    color: #888;
+}
+
+.alumni-id-container p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 5px 0 0;
+}

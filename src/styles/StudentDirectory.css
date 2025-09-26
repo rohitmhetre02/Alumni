@@ -1,0 +1,150 @@
+/* 🎓 Student Directory Styles */
+:root {
+  --primary-blue: #0a66c2;
+  --accent-green: #28a745;
+  --bg-light: #f4f6f9;
+  --bg-white: #ffffff;
+  --text-dark: #1d2226;
+  --text-muted: #6b778d;
+  --border-color: #e0e0e0;
+  --shadow-sm: 0 2px 6px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* Page Background */
+section.bg-light {
+  background: var(--bg-light) !important;
+}
+
+/* Search Bar */
+.search-input {
+  border-radius: 30px;
+  padding: 10px 18px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  font-size: 0.95rem;
+  transition: 0.2s;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 0.2rem rgba(10, 102, 194, 0.25);
+}
+
+/* Student Card */
+.student-card-modern {
+  background: var(--bg-white);
+  border-radius: 12px;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.student-card-modern:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+/* Card Header */
+.card-header-modern {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.student-image-modern {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-blue);
+  margin-right: 15px;
+}
+
+.student-info-modern .student-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.student-info-modern .student-department {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* Card Body */
+.card-body-modern {
+  padding: 16px;
+  flex-grow: 1;
+}
+
+.detail-item-modern {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 12px;
+  color: var(--text-dark);
+}
+
+.detail-item-modern i {
+  font-size: 1rem;
+  color: var(--primary-blue);
+  margin-right: 8px;
+}
+
+/* Interests */
+.interests-section h6 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.interests-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.interest-tag {
+  background: #eaf4ff;
+  color: var(--primary-blue);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  transition: 0.2s;
+}
+
+.interest-tag:hover {
+  background: var(--primary-blue);
+  color: #fff;
+}
+
+/* Card Footer */
+.card-footer-modern {
+  padding: 12px 16px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.profile-button {
+  background: var(--primary-blue);
+  color: #fff;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: 0.3s;
+  box-shadow: var(--shadow-sm);
+}
+
+.profile-button:hover {
+  background: #004182;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}

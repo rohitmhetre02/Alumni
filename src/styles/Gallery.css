@@ -1,0 +1,26 @@
+.gallery-item {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-item img {
+  border-radius: 12px;
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Force profile to the far right in the flex container */
+.nav > .dropdown.profile-toggle {
+  order: 1000;
+}
+/* Alternatively, if the dropdown has a class */
+.profile-dropdown {
+  order: 1000;
+}

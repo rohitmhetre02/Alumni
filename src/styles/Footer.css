@@ -1,0 +1,80 @@
+/* Footer Section */
+.footer-section {
+  background: linear-gradient(135deg, #4584e4, #3c3a3f);
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Links */
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffc107; /* Bootstrap warning color */
+  text-decoration: underline;
+}
+
+/* Social Icons */
+.footer-section i {
+  font-size: 1.3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-section i:hover {
+  transform: scale(1.2);
+  color: #ffc107;
+}
+
+/* Text light variations */
+.text-light-50 {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .footer-section .row {
+    text-align: center;
+  }
+
+  .footer-section .d-flex {
+    justify-content: center !important;
+  }
+}
+
+
+/* Social Icons Container */
+.footer-section .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+  text-decoration: none;
+}
+
+/* Brand Colors */
+.footer-section .social-icons a.facebook { background-color: #4267B2; }
+.footer-section .social-icons a.twitter { background-color: #1DA1F2; }
+.footer-section .social-icons a.linkedin { background-color: #0077B5; }
+.footer-section .social-icons a.instagram { 
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+}
+
+/* Hover Effects */
+.footer-section .social-icons a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.3);
+  opacity: 0.9;
+}
